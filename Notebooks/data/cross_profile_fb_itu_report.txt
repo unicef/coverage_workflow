@@ -1,0 +1,112 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns    Rows
+0  Facebook        6  175704
+1       ITU        6  175704
+
+Column Summary
+--------------
+
+Number of columns in common: 6
+Number of columns in Facebook but not in ITU: 0
+Number of columns in ITU but not in Facebook: 0
+
+Row Summary
+-----------
+
+Matched on: giga_school_id
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 175,704
+Number of rows in Facebook but not in ITU: 0
+Number of rows in ITU but not in Facebook: 0
+
+Number of rows with some compared columns unequal: 152,254
+Number of rows with all compared columns equal: 23,450
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 5
+Number of columns compared with all values equal: 1
+Total number of values which compare unequal: 486,306
+
+Columns with Unequal Values or Types
+------------------------------------
+
+          Column Facebook dtype ITU dtype  # Unequal  Max Diff  # Null Diff
+2    2g_coverage         object    object      45899         0            0
+1    3g_coverage         object    object      92021         0            0
+3    4g_coverage         object    object     152063         0            0
+0       coverage         object    object      44260         0            0
+4  coverage_type         object    object     152063         0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+       giga_school_id coverage (Facebook) coverage (ITU)
+115518   G_BRA_085275                 YES             NO
+50021    G_BRA_041074                 YES             NO
+97565    G_BRA_002196                 YES             NO
+84200    G_BRA_170449                 YES             NO
+164942   G_BRA_144669                 YES             NO
+78590    G_BRA_088227                 YES             NO
+123322   G_BRA_152018                 YES             NO
+99614    G_BRA_088477                 YES             NO
+116155   G_BRA_051022                 YES             NO
+31167    G_BRA_060535                 YES             NO
+
+       giga_school_id 3g_coverage (Facebook) 3g_coverage (ITU)
+10313    G_BRA_052185                    YES                NO
+51644    G_BRA_009801                    YES                NO
+66117    G_BRA_083303                    YES                NO
+942      G_BRA_036833                    YES                NO
+47314    G_BRA_061227                    YES                NO
+107478   G_BRA_081001                    YES                NO
+63114    G_BRA_075221                    YES                NO
+85430    G_BRA_073855                    YES                NO
+101045   G_BRA_105092                    YES                NO
+21659    G_BRA_021033                    YES                NO
+
+       giga_school_id 2g_coverage (Facebook) 2g_coverage (ITU)
+99509    G_BRA_007436                    YES                NO
+95467    G_BRA_033257                    YES                NO
+25299    G_BRA_029363                    YES                NO
+78202    G_BRA_031526                    YES                NO
+162645   G_BRA_153017                    YES                NO
+29210    G_BRA_016733                    YES                NO
+112832   G_BRA_106479                    YES                NO
+49707    G_BRA_034067                    YES                NO
+122566   G_BRA_174742                    YES                NO
+3652     G_BRA_022006                    YES                NO
+
+       giga_school_id 4g_coverage (Facebook) 4g_coverage (ITU)
+58532    G_BRA_006143                    YES                NO
+13238    G_BRA_096025                    YES                NO
+117910   G_BRA_044937                    YES                NO
+60232    G_BRA_062082                    YES                NO
+111211   G_BRA_158726                    YES                NO
+43862    G_BRA_044151                    YES                NO
+97193    G_BRA_106052                    YES                NO
+149470   G_BRA_168269                    YES                NO
+105939   G_BRA_118560                    YES                NO
+92506    G_BRA_137522                    YES                NO
+
+       giga_school_id coverage_type (Facebook) coverage_type (ITU)
+31451    G_BRA_001227                       4G                  3G
+135931   G_BRA_066034                       4G                  3G
+149217   G_BRA_113814                       4G                  2G
+49743    G_BRA_094136                       4G                  2G
+146912   G_BRA_002330                       4G                None
+158633   G_BRA_154963                       4G                  2G
+137899   G_BRA_143584                       4G                  3G
+3551     G_BRA_069322                       4G                  2G
+163809   G_BRA_128824                       4G                  3G
+49717    G_BRA_037562                       4G                  2G
+
+

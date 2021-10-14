@@ -1,0 +1,66 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0    Master       20  4093
+1  Ericsson       39  4197
+
+Column Summary
+--------------
+
+Number of columns in common: 11
+Number of columns in Master but not in Ericsson: 9
+Number of columns in Ericsson but not in Master: 28
+
+Row Summary
+-----------
+
+Matched on: giga_school_id
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 4,093
+Number of rows in Master but not in Ericsson: 0
+Number of rows in Ericsson but not in Master: 104
+
+Number of rows with some compared columns unequal: 1
+Number of rows with all compared columns equal: 4,092
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 1
+Number of columns compared with all values equal: 10
+Total number of values which compare unequal: 1
+
+Columns with Unequal Values or Types
+------------------------------------
+
+        Column Master dtype Ericsson dtype  # Unequal  Max Diff  # Null Diff
+0  school_name       object         object          1         0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+     giga_school_id                     school_name (Master)                 school_name (Ericsson)
+2413    G_RWA_02451  GROUPE SCOLAIRE SAINT\n NICOLAS CYANIKA  GROUPE SCOLAIRE SAINT NICOLAS CYANIKA
+
+Sample Rows Only in Ericsson (First 10 Columns)
+-----------------------------------------------
+
+        sn  school_id     school_name   school_category school_settings    district     sector          cell      village  latitude
+4159   970   341104.0      EP KARAMBI  GOVERNMENT_AIDED         PRIMARY     NYABIHU    RUREMBO       MURAMBI      KARAMBI -1.667694
+4182  1169   121214.0  EP NYARUSHISHI            PUBLIC         PRIMARY      RUSIZI     NKUNGU    RYAMUHIRWA  NYARUSHISHI -2.500444
+4176  1062   361806.0      EP RUGANDA  GOVERNMENT_AIDED         PRIMARY      RUSIZI   RWIMBOGO       RUGANDA      RUBAMBA -2.636667
+4178  1070   540305.0       EP RUSAVE  GOVERNMENT_AIDED         PRIMARY     KAYONZA  KABARONDO      CYINZOVU   AGASHIKIRI -2.003833
+4192  1345   110107.0       EP GITEGA            PUBLIC         PRIMARY  NYARUGENGE     GITEGA      KINYANGE      UBUREZI -1.959778
+4139   453   510104.0   GS NYAGASAMBU            PUBLIC           12YBE   RWAMAGANA     FUMBWE    NYAKAGUNGA      AKABEZA -1.895806
+4152   915   230309.0  EP NYARUSHISHI  GOVERNMENT_AIDED         PRIMARY   NYARUGURU     KIBEHO        NYANGE      MPATSWE -2.692333
+4184  1211   230101.0        EP GITWE  GOVERNMENT_AIDED         PRIMARY   NYARUGURU    BUSANZE  KIRARANGOMBE        GITWE -2.822972
+4131   365   511407.0       GS MABARE  GOVERNMENT_AIDED           12YBE   RWAMAGANA     RUBONA        MABARE     RUBIRIZI -2.065889
+4142   566   540608.0      GS KARAMBI            PUBLIC           12YBE     KAYONZA    MURUNDI       KARAMBI      KARAMBI -1.722250
+
+

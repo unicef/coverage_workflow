@@ -1,0 +1,80 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0    Master       20  4093
+1  Facebook       26  4195
+
+Column Summary
+--------------
+
+Number of columns in common: 12
+Number of columns in Master but not in Facebook: 8
+Number of columns in Facebook but not in Master: 14
+
+Row Summary
+-----------
+
+Matched on: giga_school_id
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 4,091
+Number of rows in Master but not in Facebook: 2
+Number of rows in Facebook but not in Master: 104
+
+Number of rows with some compared columns unequal: 8
+Number of rows with all compared columns equal: 4,083
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 1
+Number of columns compared with all values equal: 11
+Total number of values which compare unequal: 8
+
+Columns with Unequal Values or Types
+------------------------------------
+
+        Column Master dtype Facebook dtype  # Unequal  Max Diff  # Null Diff
+0  school_name       object         object          8         0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+     giga_school_id                        school_name (Master)                          school_name (Facebook)
+3717    G_RWA_03817                          LycÃ©e de Rusatira                               Lycée de Rusatira
+3433    G_RWA_03526                       LITTLE GEMS ACADEMY""                       "LITTLE GEMS ACADEMY"""""
+3833    G_RWA_03936                               PSST KIZITO""                               "PSST KIZITO"""""
+2185    G_RWA_02214                                GS MWEGERA""                                "GS MWEGERA"""""
+3459    G_RWA_03553                   NKERENKE PRIMARY SCHOOL""                   "NKERENKE PRIMARY SCHOOL"""""
+634     G_RWA_02502  IBYIRINGIROBYEJO SAINTE MARIE MONTESORIE""  "IBYIRINGIROBYEJO SAINTE MARIE MONTESORIE"""""
+3972    G_RWA_04077                       St Christopher TVET""                       "St Christopher TVET"""""
+2396    G_RWA_02434                                GS MUGANZA""                                "GS MUGANZA"""""
+
+Sample Rows Only in Master (First 10 Columns)
+---------------------------------------------
+
+                                      uuid country      source giga_school_id  source_school_id                              school_name education_level  latitude  longitude             hex8
+2576  f6220be6-13a4-45ae-b000-327bbb048733  Rwanda  government    G_RWA_02626          121312.0               Ecole Notre Dame des Anges         Primary -1.956555   30.00000  886ad8c6d3fffff
+2413  b4037996-d127-4111-84ee-73f082241cec  Rwanda  government    G_RWA_02451          250205.0  GROUPE SCOLAIRE SAINT\n NICOLAS CYANIKA       Secondary -2.442110   29.60156  886ad85947fffff
+
+Sample Rows Only in Facebook (First 10 Columns)
+-----------------------------------------------
+
+       tile_bigint  clean_lat  clean_lon  school_id      sn  source_school_id   school_name   school_category        school_settings    district
+4116  2.634400e+15  -1.783444  30.583194     1025.0  1025.0          540115.0     EP RUKORE            PUBLIC                PRIMARY     KAYONZA
+4180  2.627640e+15  -1.953139  30.042833     1342.0  1342.0          110207.0    EP MUGANZA            PUBLIC                PRIMARY  NYARUGENGE
+4191  2.618890e+15  -1.813389  29.344083     1026.0  1026.0          320304.0    EP GISUNZU            PUBLIC                PRIMARY     RUTSIRO
+4117  2.629600e+15  -1.905472  30.200222      608.0   608.0          110834.0      EP JURWE            PUBLIC  "PRE_PRIMARY,PRIMARY"      GASABO
+4159  2.626810e+15  -2.091278  29.976889      924.0   924.0          280504.0  EP NYAGISOZI  GOVERNMENT_AIDED                PRIMARY     KAMONYI
+4169  2.626930e+15  -1.487917  29.986639     1212.0  1212.0          340301.0     EP KABEZA            PUBLIC                PRIMARY     GICUMBI
+4153  2.632320e+15  -1.257083  30.417083      199.0   199.0          521307.0     GS KABEZA  GOVERNMENT_AIDED                  12YBE   NYAGATARE
+4107  2.626490e+15  -1.714944  29.951667      806.0   806.0          270848.0     EP RUKORE            PUBLIC  "PRE_PRIMARY,PRIMARY"     RULINDO
+4146  2.634000e+15  -2.108917  30.551639       35.0    35.0          421719.0  GS NYAMUGARI            PUBLIC                 12 YBE       NGOMA
+4177  2.635110e+15  -1.884250  30.640444     1023.0  1023.0          540702.0     EP KAGEYO            PUBLIC                PRIMARY     KAYONZA
+
+

@@ -1,0 +1,54 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0    Master       20  4093
+1       ITU       24  4197
+
+Column Summary
+--------------
+
+Number of columns in common: 5
+Number of columns in Master but not in ITU: 15
+Number of columns in ITU but not in Master: 19
+
+Row Summary
+-----------
+
+Matched on: giga_school_id
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 4,093
+Number of rows in Master but not in ITU: 0
+Number of rows in ITU but not in Master: 104
+
+Number of rows with some compared columns unequal: 0
+Number of rows with all compared columns equal: 4,093
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 0
+Number of columns compared with all values equal: 5
+Total number of values which compare unequal: 0
+
+Sample Rows Only in ITU (First 10 Columns)
+------------------------------------------
+
+       fid    sn  school_id         school_nam        school_cat school_set   district     sector        cell      village
+4178  1070  1070   540305.0          EP RUSAVE  GOVERNMENT_AIDED    PRIMARY    KAYONZA  KABARONDO    CYINZOVU   AGASHIKIRI
+4196  3713  3713   280901.0        EP KAMBYEYI            PUBLIC    PRIMARY    KAMONYI  NYARUBAKA    KAMBYEYI        KIRWA
+4195  3429  3429   330423.0  HOUSE OF CHILDREN           PRIVATE    PRIMARY     RUBAVU    GISENYI  MBUGANGARI  IYOBOKAMANA
+4176  1062  1062   361806.0         EP RUGANDA  GOVERNMENT_AIDED    PRIMARY     RUSIZI   RWIMBOGO     RUGANDA      RUBAMBA
+4101    67    67   270832.0          GS MUTARA            PUBLIC     12 YBE    RULINDO     RUKOZO      BURARO      RUKINGU
+4158   951   951   411407.0           EP MURWA            PUBLIC    PRIMARY    RULINDO     RUKOZO      BURARO        MURWA
+4183  1207  1207   121014.0         EP MUYANGE            PUBLIC    PRIMARY  NYAMAGABE     KITABI       SHABA      MUYANGE
+4152   915   915   230309.0     EP NYARUSHISHI  GOVERNMENT_AIDED    PRIMARY  NYARUGURU     KIBEHO      NYANGE      MPATSWE
+4117   247   247   341001.0          GS NGANZO  GOVERNMENT_AIDED      12YBE    NYABIHU     RUGERA  NYAGAHONDO       NGANZO
+4189  1309  1309   130608.0        EP KIGARAMA            PUBLIC    PRIMARY  RWAMAGANA      NZIGE    KIGARAMA       MIKONI
+
+

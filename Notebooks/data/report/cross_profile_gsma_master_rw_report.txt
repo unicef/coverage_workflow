@@ -1,0 +1,54 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0    Master       20  4093
+1      GSMA       22  4197
+
+Column Summary
+--------------
+
+Number of columns in common: 5
+Number of columns in Master but not in GSMA: 15
+Number of columns in GSMA but not in Master: 17
+
+Row Summary
+-----------
+
+Matched on: giga_school_id
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 4,093
+Number of rows in Master but not in GSMA: 0
+Number of rows in GSMA but not in Master: 104
+
+Number of rows with some compared columns unequal: 0
+Number of rows with all compared columns equal: 4,093
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 0
+Number of columns compared with all values equal: 5
+Total number of values which compare unequal: 0
+
+Sample Rows Only in GSMA (First 10 Columns)
+-------------------------------------------
+
+        sn  source_sch   school_nam        school_cat           school_set   district     sector         cell    village  latitude
+4196  3713    280901.0  EP KAMBYEYI            PUBLIC              PRIMARY    KAMONYI  NYARUBAKA     KAMBYEYI      KIRWA -2.987600
+4167  1015    411406.0     EP MURWA           PRIVATE              PRIMARY    RULINDO     RUKOZO       BURARO      MURWA -1.652250
+4129   343    350207.0    GS RUBONA  GOVERNMENT_AIDED                12YBE  NGORORERO    GATUMBA      GATSIBO      GATWA -1.963306
+4107   192    410503.0   GS GIHINGA  GOVERNMENT_AIDED                12YBE    RULINDO   CYINZUZI  BUDAKIRANYA    GIHINGA -1.757333
+4093     1    430710.0    GS MURAMA            PUBLIC               12 YBE    RUTSIRO     MASASA       GABIRO     GABIRO -1.973667
+4153   923    560304.0     EP NGARA            PUBLIC              PRIMARY      NGOMA    KAREMBO      AKAZIBA      NGARA -2.157556
+4193  1392    280910.0  EP KAGARAMA            PUBLIC              PRIMARY    KAMONYI  NYARUBAKA     KAMBYEYI     RUSEKE -2.567880
+4161   977    540603.0    EP GACACA  GOVERNMENT_AIDED              PRIMARY    KAYONZA    MURUNDI   RYAMANYONI    NGARAMA -1.797417
+4151   806    270848.0    EP RUKORE            PUBLIC  PRE_PRIMARY,PRIMARY    RULINDO      TUMBA       BARALI     GASEKE -1.714944
+4179  1090    331205.0  EP KABIRIZI            PUBLIC              PRIMARY     RUBAVU   RUGERERO     KABILIZI  RUHANGIRO -1.694583
+
+

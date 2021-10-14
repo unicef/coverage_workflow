@@ -1,0 +1,119 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0  Facebook        6  4195
+1  Ericsson        6  4197
+
+Column Summary
+--------------
+
+Number of columns in common: 6
+Number of columns in Facebook but not in Ericsson: 0
+Number of columns in Ericsson but not in Facebook: 0
+
+Row Summary
+-----------
+
+Matched on: giga_school_id
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 4,195
+Number of rows in Facebook but not in Ericsson: 0
+Number of rows in Ericsson but not in Facebook: 2
+
+Number of rows with some compared columns unequal: 2,504
+Number of rows with all compared columns equal: 1,691
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 5
+Number of columns compared with all values equal: 1
+Total number of values which compare unequal: 5,948
+
+Columns with Unequal Values or Types
+------------------------------------
+
+                  Column Facebook dtype Ericsson dtype  # Unequal  Max Diff  # Null Diff
+2            2g_coverage         object         object        543         0            0
+0            3g_coverage         object         object        426         0            0
+3            4g_coverage         object         object       2375         0            0
+4  coverage_availability         object         object        218         0            0
+1          coverage_type         object         object       2386         0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+     giga_school_id 3g_coverage (Facebook) 3g_coverage (Ericsson)
+1422    G_RWA_03095                    YES                     NO
+2603    G_RWA_03678                    YES                     NO
+3966    G_RWA_03411                    YES                     NO
+1893    G_RWA_00593                    YES                     NO
+2040    G_RWA_01724                    YES                     NO
+1615    G_RWA_01560                    YES                     NO
+2874    G_RWA_00184                    YES                     NO
+2698    G_RWA_01610                    YES                     NO
+1787    G_RWA_01518                    YES                     NO
+162     G_RWA_00078                    YES                     NO
+
+     giga_school_id coverage_type (Facebook) coverage_type (Ericsson)
+1351    G_RWA_00414                       4G                       3G
+4076    G_RWA_01644                       4G                       3G
+2713    G_RWA_02805                       4G                     None
+3079    G_RWA_01179                       4G                       3G
+1178    G_RWA_02656                       4G                     None
+3366    G_RWA_01377                       4G                       2G
+2896    G_RWA_00550                       4G                       3G
+1403    G_RWA_02003                       4G                       2G
+3293    G_RWA_01893                       4G                       3G
+2629    G_RWA_04171                       4G                       3G
+
+     giga_school_id 2g_coverage (Facebook) 2g_coverage (Ericsson)
+516     G_RWA_00979                    YES                     NO
+2194    G_RWA_00356                    YES                     NO
+2921    G_RWA_00421                    YES                     NO
+3995    G_RWA_01510                    YES                     NO
+2312    G_RWA_02717                    YES                     NO
+162     G_RWA_00078                    YES                     NO
+3596    G_RWA_02886                    YES                     NO
+2863    G_RWA_03049                    YES                     NO
+1064    G_RWA_01393                    YES                     NO
+1488    G_RWA_02893                    YES                     NO
+
+     giga_school_id 4g_coverage (Facebook) 4g_coverage (Ericsson)
+1437    G_RWA_01898                    YES                     NO
+97      G_RWA_00890                    YES                     NO
+1246    G_RWA_03955                    YES                     NO
+1406    G_RWA_02957                    YES                     NO
+278     G_RWA_01290                    YES                     NO
+3136    G_RWA_00995                    YES                     NO
+850     G_RWA_00188                    YES                     NO
+3671    G_RWA_02275                    YES                     NO
+3954    G_RWA_00930                    YES                     NO
+1007    G_RWA_00561                    YES                     NO
+
+     giga_school_id coverage_availability (Facebook) coverage_availability (Ericsson)
+3676    G_RWA_03025                              YES                               NO
+320     G_RWA_02479                              YES                               NO
+3573    G_RWA_02909                              YES                               NO
+840     G_RWA_02746                              YES                               NO
+3423    G_RWA_02749                              YES                               NO
+3498    G_RWA_01895                              YES                               NO
+2454    G_RWA_01767                              YES                               NO
+354     G_RWA_02990                              YES                               NO
+2499    G_RWA_00300                              YES                               NO
+3136    G_RWA_00995                              YES                               NO
+
+Sample Rows Only in Ericsson (First 10 Columns)
+-----------------------------------------------
+
+     giga_school_id coverage_availability coverage_type 2g_coverage 3g_coverage 4g_coverage
+4196    G_RWA_02626                   YES            4G         YES         YES         YES
+4195    G_RWA_02451                   YES            4G         YES         YES         YES
+
+

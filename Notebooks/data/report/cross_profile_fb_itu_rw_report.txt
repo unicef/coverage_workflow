@@ -1,0 +1,119 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+  DataFrame  Columns  Rows
+0  Facebook        6  4195
+1       ITU        6  4197
+
+Column Summary
+--------------
+
+Number of columns in common: 6
+Number of columns in Facebook but not in ITU: 0
+Number of columns in ITU but not in Facebook: 0
+
+Row Summary
+-----------
+
+Matched on: giga_school_id
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 4,195
+Number of rows in Facebook but not in ITU: 0
+Number of rows in ITU but not in Facebook: 2
+
+Number of rows with some compared columns unequal: 3,420
+Number of rows with all compared columns equal: 775
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 5
+Number of columns compared with all values equal: 1
+Total number of values which compare unequal: 4,973
+
+Columns with Unequal Values or Types
+------------------------------------
+
+                  Column Facebook dtype ITU dtype  # Unequal  Max Diff  # Null Diff
+2            2g_coverage         object    object        374         0            0
+0            3g_coverage         object    object       3417         0            0
+3            4g_coverage         object    object        500         0            0
+4  coverage_availability         object    object        167         0            0
+1          coverage_type         object    object        515         0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+     giga_school_id 3g_coverage (Facebook) 3g_coverage (ITU)
+3251    G_RWA_02863                    YES                NO
+2738    G_RWA_00739                    YES                NO
+2344    G_RWA_00829                    YES                NO
+582     G_RWA_02735                    YES                NO
+1743    G_RWA_01255                    YES                NO
+387     G_RWA_02910                    YES                NO
+2622    G_RWA_02984                    YES                NO
+1739    G_RWA_00832                    YES                NO
+930     G_RWA_03781                    YES                NO
+110     G_RWA_02051                    YES                NO
+
+     giga_school_id coverage_type (Facebook) coverage_type (ITU)
+2879    G_RWA_00974                       4G                  2G
+1826    G_RWA_00486                       4G                  2G
+674     G_RWA_01039                       4G                  2G
+3332    G_RWA_03090                       4G                None
+3008    G_RWA_02627                       4G                None
+946     G_RWA_02181                       4G                  2G
+885     G_RWA_02244                       4G                  2G
+719     G_RWA_02203                       4G                  2G
+2500    G_RWA_00309                       4G                  2G
+1575    G_RWA_02058                       4G                  2G
+
+     giga_school_id 2g_coverage (Facebook) 2g_coverage (ITU)
+2515    G_RWA_01826                    YES                NO
+3560    G_RWA_00299                    YES                NO
+3661    G_RWA_01048                    YES                NO
+4085    G_RWA_03908                    YES                NO
+3210    G_RWA_00389                    YES                NO
+444     G_RWA_03491                    YES                NO
+1340    G_RWA_02826                    YES                NO
+844     G_RWA_03241                    YES                NO
+2527    G_RWA_03528                    YES                NO
+516     G_RWA_00979                    YES                NO
+
+     giga_school_id 4g_coverage (Facebook) 4g_coverage (ITU)
+3671    G_RWA_02275                    YES                NO
+2410    G_RWA_02614                    YES                NO
+585     G_RWA_03767                    YES                NO
+2363    G_RWA_02875                    YES                NO
+363     G_RWA_01403                    YES                NO
+1156    G_RWA_01525                    YES                NO
+2150    G_RWA_00009                    YES                NO
+32      G_RWA_02792                    YES                NO
+3819    G_RWA_03467                    YES                NO
+1286    G_RWA_02706                    YES                NO
+
+     giga_school_id coverage_availability (Facebook) coverage_availability (ITU)
+2425    G_RWA_01265                              YES                          NO
+2990    G_RWA_02585                              YES                          NO
+522     G_RWA_01831                              YES                          NO
+3388    G_RWA_00715                              YES                          NO
+69      G_RWA_02611                              YES                          NO
+3637    G_RWA_00493                              YES                          NO
+160     G_RWA_03659                              YES                          NO
+3783    G_RWA_01356                              YES                          NO
+1102    G_RWA_01124                              YES                          NO
+3293    G_RWA_01893                              YES                          NO
+
+Sample Rows Only in ITU (First 10 Columns)
+------------------------------------------
+
+     giga_school_id coverage_availability coverage_type 2g_coverage 3g_coverage 4g_coverage
+4196    G_RWA_02626                   YES            4G         YES          NO         YES
+4195    G_RWA_02451                   YES            4G         YES          NO         YES
+
+
